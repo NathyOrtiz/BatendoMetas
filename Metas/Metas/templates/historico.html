@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de Vendas</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Histórico de Funcionários</h1>
+        <!--Criando uma tabela-->
+        <table>
+            <tr><!--1ª linha da tabela-->
+                <th><!--Cabeçalho da coluna 1-->
+                    Nome
+                </th>
+                <th><!--Cabeçalho da coluna 2-->
+                    Vendas
+                </th>
+                <th><!--Cabeçalho da coluna 3-->
+                    Meta
+                </th>
+            </tr>
+            {% for nome, vendas, meta in dados %}
+            <tr><!--2ª linha da tabela-->
+                <td> <!--1ª Coluna (uma célula) da tabela-->
+                    {{nome}}
+                </td>
+                <td> <!--2ª Coluna (uma célula) da tabela-->
+                    {{vendas}}
+                </td>
+                <td> <!--3ª Coluna (uma célula) da tabela-->
+                    {{meta}}
+                </td>
+            </tr>
+            {%endfor%}
+            <br>
+        </table>
+        <a href="/" class= "botao-secundario" >Voltar</a>
+    </div>
+</body>
+</html>

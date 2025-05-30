@@ -1,0 +1,51 @@
+<!--Linha de comentário-->
+<!--Declara que o conteúdo ou tipo de documento é o html-->
+<!DOCTYPE html>
+<!--Início do documento html, o atributo lang indica o idioma do conteúdo
+da página web-->
+<html lang="pt-br">
+<head><!--Contém as configurações e links-->
+    <meta charset="UTF-8"><!--Dá suporte aos caracteres especiais do idioma-->
+    <!--Dá o suporte inicial para a responsividade, adotando uma largura padrão e
+    uma escala de visualização-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Contém as configurações e links-->
+    <title>Cadastro das vendas</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body><!--Início de fato do conteúdo visível ao usuário-->
+    <!--Caixa organizadora-->
+    <div class="container">
+        <!--Título principal da página-->
+        <h1>Registrar Funcionário</h1>
+        <!--Criando a estrutura de um formulário-->
+        <!--Atributos basicamente indicam para onde as informações irão e como elas
+        serão enviadas-->
+        <form action="/salvar" method="post">
+            <!--Criação de uma caixa de texto para receber informações
+            type: tipo de informação que será inserida
+            name: referência para a variável que receberá a informação
+            placeholder: dica do que digitar
+            required: garantir o item como campo obrigatório-->
+            <input type="text" name="nome" placeholder="Nome do funcionário"
+            required>
+            <!--step: permite a inserção de nº com casas decimais-->
+            <br>
+            <input type="number" name="vendas" step="0.01" placeholder="Total de vendas"
+            required>
+            <br>
+            <input type="number" name="meta" step="0.01" placeholder="Meta"
+            required>
+            <!--Criando a estrutura de um botão
+            type= submit indica que estão enviando os dados do formulário para um
+            lugar (servidor)-->
+            <br>
+            <button type="submit">Salvar</button>
+            <br>
+        </form>
+        <!--Criando um link, imitando um botão-->
+        <!--href deve conter a referencia da página web que quero abrir-->
+        <a href="/historico" class= "botao-secundario" >Ver Histórico</a>
+    </div>
+</body>
+</html>
