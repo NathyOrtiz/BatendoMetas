@@ -1,0 +1,84 @@
+body{
+    /*Definindo o tipo de letra para a fonte*/
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*Definindo um fundo para toda a página*/
+    background: rgb(221, 193, 193);
+    /*Colocamos a imagem como fundo da tela*/
+    background-image: url("funcionario.jpg");
+    /*Faz com que a imagem 100% ocupe a largura do elemento*/
+    background-size: 100%;
+    /**/
+}
+/*Estilizando a div pela classe*/
+.container{
+    /*Definir uma largura máxima para a nossa div*/
+    max-width: 500px;
+    /*Adiciona 40px de margem vertical e centraliza automaticamente 
+    horizontal*/
+    margin: 40px auto;
+    padding: 30px; /*Adiciona um espaco interno ao redor do conteúdo
+    da div*/
+    /*Fundo na div*/
+    background: whitesmoke;
+    border-radius: 15px;
+    box-shadow:0 4px 15px rgb(0, 0, 0);
+}
+h1{
+    /*Alinhamento do texto*/
+    text-align: center;
+    /*Cor do texto*/
+    color:navy;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    /*Organiza os elementos um embaixo do outro como se fosse uma 
+    coluna*/
+}
+input, button{
+    margin: 10px; /*Margem Superior*/
+    padding: 10px; /*Espaçamento interno entre o conteúdo e a borda do elemento*/
+    font-size: 16px; /*Tamanho da fonte (letra)*/
+}
+button,.botao-secundario{
+    /*Trocar a cor de fundo*/
+    background-color: darkblue;
+    /*Trocar a cor da fonte*/
+    color:antiquewhite;
+    /*Deixar os cantos arredondados*/
+    border-radius: 8px;
+    /*Alinhamento de texto*/
+    text-align: center;
+    /*Retirar a borda padrão*/
+    border: none;
+    /*Colocar mãozinha no lugar da seta*/
+    cursor: pointer;
+    /*Remove o sublinhado de links (o botão secundário é a tag a, um link funcionando
+    como botão*/
+    text-decoration: none;
+}
+button:hover, .botao-secundario:hover{
+    background-color: lightblue;
+    font-size: 18px;
+    color: blue
+}
+.botao-secundario{
+    display:flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+table{
+    width:100%;/*Ocupará 100% da largura disponível*/
+    border-collapse: collapse;/*Retira o espaçamento entre as células da tabela*/
+    margin-top: 2px;/*Adiciona margem superior*/
+}
+table, th, td{
+    /*Aplica uma borda cinza à tabela, cabeçalho e células*/
+    border: 1px solid gray;
+}
+th,td{
+    padding: 10px;
+    text-align: center;
+}
